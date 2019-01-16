@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Node.js app for Blue-Green deployment sample pipeline",
   "main": "index.js",
+  "engines": {
+    "node": ">=50.9" // intentionally so big version number
+  },
   "scripts": {
     "test": "mocha tests --recursive"
   },
