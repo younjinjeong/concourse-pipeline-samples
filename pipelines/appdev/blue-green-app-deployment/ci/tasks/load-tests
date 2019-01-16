@@ -4,6 +4,9 @@ set -e
 
 echo "Installing artillery for load tests: https://artillery.io/docs/getting-started/"
 
+apt-get install nodejs -y
+apt-get install npm -y 
+
 npm install -g npm
 npm install -g artillery --unsafe-perm=true --allow-root 
 
