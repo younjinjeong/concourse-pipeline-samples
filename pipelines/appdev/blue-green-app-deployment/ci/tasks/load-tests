@@ -11,5 +11,6 @@ export NEXT_APP_COLOR=$(cat ./current-app-info/next-app.txt)
 export NEXT_APP_URL=http://$NEXT_APP_COLOR-$PWS_APP_SUFFIX.$PWS_APP_DOMAIN/
 
 echo "Running artillery load tests..."
+echo $NEXT_APP_URL
 
-artillery quick --duration 25 --rate 100 $NEXT_APP_URL
+artillery quick --duration 30 --rate 1000 $NEXT_APP_URL
