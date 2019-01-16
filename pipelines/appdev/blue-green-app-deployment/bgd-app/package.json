@@ -4,7 +4,7 @@
   "description": "Node.js app for Blue-Green deployment sample pipeline",
   "main": "index.js",
   "engines": {
-    "node": ">=50.9" 
+    "node": ">=11.1.0" 
   },
   "scripts": {
     "test": "mocha tests --recursive"
